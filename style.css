@@ -184,4 +184,8 @@ button:hover{
         display: flex;
         justify-content: space-between;
     }
+    .flex4 .mobile p{
+       margin-top: 12px;
+       color:hsl(236, 100%, 87%);
+    }
     }
