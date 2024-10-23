@@ -121,8 +121,12 @@ button:hover{
     justify-content: space-between;
     font-size: 18px;
 }
-.flex4 h1, p{
+.flex4 h1{
     color: #fff;
+}
+.flex4 p{
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
 }
 .play {
     background: hsl(195, 74%, 62%);
