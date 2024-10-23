@@ -1,12 +1,9 @@
 async function loadJSON() {
   const res = await fetch('data.json');
   data = await res.json();
-  console.log(data);
 }
 
 function UpdateEvent(timeframes) {
-  console.log(timeframes);
-  console.log(data);
   const previousLabel = getPreviousLabel(timeframes);
 
   document.getElementById('work-current').innerHTML = (data[0].timeframes[timeframes].current +'hrs');
@@ -42,17 +39,14 @@ function getPreviousLabel(timeframe) {
 }
 
 document.getElementById('daily-btn').addEventListener('click', function() {
-  console.log('daily button');
   UpdateEvent('daily');
 });
 
 document.getElementById('weekly-btn').addEventListener('click', function() {
-  console.log('weekly button');
   UpdateEvent('weekly');
 });
 
 document.getElementById('monthly-btn').addEventListener('click', function() {
-  console.log('monthly button');
   UpdateEvent('monthly');
 });
 
